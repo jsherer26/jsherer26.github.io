@@ -85,10 +85,13 @@ article {
     background-color: var(--grey);
     color: white;
     margin: 0px;
+    display:flex;
+    flex-direction: column;
 }
 article p{
-    padding: 10px;
-    font-size: larger;
+    padding: 0px;
+    font-size: 20px;
+    background-color: var(--grey);
 }
 article h2 {
     padding-bottom: 5px;
@@ -101,13 +104,23 @@ article h2 {
 footer {
     background-color: var(--garnet);
     height: 80px;
+    width: 100%;
     color: white;
     text-align: center;
     padding-top: 10px;
+    display: inline-block;
 }
 footer a {
     font-size: 20px;
     margin: 2%;
+}
+/*This creates a flexbox around the map and text allowing them to be next to each other*/
+.about {
+    background-color: var(--grey);
+    color: white;
+    margin: 0px;
+    display:flex;
+    flex-direction: row;
 }
 /*This moves the map next to the text in the about us page*/
 .map {
