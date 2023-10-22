@@ -1,0 +1,227 @@
+:root {
+    --garnet: #73000a;
+    --grey: #676156;
+
+}
+/*This ensures that the page takes up the whole viewport*/
+html, body {
+    min-height: 100%;
+    min-width: 100%;
+    font-family: Monaco, monospace;
+}
+/*This fixes all the links*/
+a {
+    text-decoration: none;
+    color: white;
+}
+/*This adds the garnet backgound and font for the header*/
+header {
+    background-color: var(--garnet);
+    height: 150px;
+}
+/*This sizes the image and adds the grey background*/
+header img {
+    width: 300px;
+    background-color: var(--grey);
+    border-radius: 25px;
+    margin: 25px;
+    float: left;
+}
+/*This colors all the nav links and positions them*/
+nav {
+    justify-content: center;
+    padding: 5%
+}
+.nav-item {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 2%;
+}
+/*This sets the background image to scale with the viewport and places the text in the center with a transparent background*/
+.background {
+    background-image: url("images/homeBackground.jpg");
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    background-color: rgba(115, 0, 10, .7);
+    font-size: 30px;
+}
+/*This creates the join call to action and button*/
+.join {
+    background-color: var(--garnet);
+    color: white;
+    height: 100px;
+    align-items: center;
+}
+.join a {
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 25px;
+    float: left;
+    font-size: 30px;
+    line-height: 50px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.join p {
+    float: right;
+    font-size: 30px;
+    margin-right: 25px;
+}
+/*This creates the background and font for all the articles*/
+article {
+    background-color: var(--grey);
+    color: white;
+    margin: 0px;
+}
+article p{
+    padding: 10px;
+    font-size: larger;
+}
+article h2 {
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 30px;
+    background-color: var(--garnet);
+}
+/*This styles the footer*/
+footer {
+    background-color: var(--garnet);
+    height: 80px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+footer a {
+    font-size: 20px;
+    margin: 2%;
+}
+/*This moves the map next to the text in the about us page*/
+.map {
+    float: right;
+    padding: 10px;
+    margin-top: 50px;
+}
+/*This moves the discord and form sections to both sides of the page and provides background.*/
+.contact-container {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: var(--grey);
+    text-align: center;
+    height: 350px;
+}
+.discord-text {
+    background-color: var(--garnet);
+    border-radius: 25px;
+    padding: 5px;
+    margin: 5%;
+    color: white;
+}
+.discord-link {
+    background-color: var(--garnet);
+    border-radius: 25px;
+    padding: 5px;
+}
+/*This fixes the form and aligns it all to the left*/
+.form {
+    background-color: var(--garnet);
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    clear: both;
+}
+.form label {
+    float:left;
+    width:25%;
+    text-align:right;
+}
+.form input {
+    float:left;
+    width:65%;
+}
+.form textarea {
+    float: left;
+    width: 65%;
+}
+/*This adds the background and formatting for the leader profiles*/
+.leadership h2 {
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 30px;
+    background-color: var(--garnet);
+    margin: 0px;
+    color: white;
+}
+.leader-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--grey);
+    margin: 0px;
+    border: black solid 1px;
+}
+.leader-container img {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+}
+.leader-container h3,p {
+    color: white;
+    background-color: var(--garnet);
+    padding: 10px;
+    border-radius: 25px;
+    margin: 10px;
+    float: left;
+}
+.leader-container a {
+    display: inline-block;
+    background-color: var(--garnet);
+    padding: 10px;
+    border-radius: 25px;
+    margin: 10px;
+}
+/*This fixes any headings for sections rather than articles*/
+section h2 {
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 30px;
+    background-color: var(--garnet);
+    color: white;
+    margin: 0px;
+}
+/*This fixes the resources page sections*/
+.presentations  {
+    background-color: var(--grey);
+    color: white;
+    padding-bottom: 20px;
+}
+.learning {
+    background-color: var(--grey);
+    color: white;
+    padding-bottom: 20px;
+}
+.documents {
+    background-color: var(--grey);
+    color: white;
+    padding-bottom: 20px;
+}
+/*This provides more spacing between items in the FAQ page*/
+.faq li {
+    padding: 5px;
+}
