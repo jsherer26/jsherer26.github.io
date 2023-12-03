@@ -8,6 +8,9 @@ html, body {
     min-height: 100%;
     min-width: 100%;
     font-family: Monaco, monospace;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
 }
 /*This fixes all the links*/
 a {
@@ -104,15 +107,28 @@ article h2 {
 footer {
     background-color: var(--garnet);
     height: 80px;
-    width: 100%;
     color: white;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     padding-top: 10px;
-    display: inline-block;
+    flex-direction: column;
+    display: flex;
+}
+.footerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
 }
 footer a {
     font-size: 20px;
     margin: 2%;
+    flex-direction: column;
+}
+.copyright {
+    display: flex;
+    flex-flow: column;
 }
 /*This creates a flexbox around the map and text allowing them to be next to each other*/
 .about {
@@ -123,10 +139,9 @@ footer a {
     flex-direction: row;
 }
 /*This moves the map next to the text in the about us page*/
-.map {
+#map {
     float: right;
     padding: 10px;
-    margin-top: 50px;
 }
 /*This moves the discord and form sections to both sides of the page and provides background.*/
 .contact-container {

@@ -39,16 +39,18 @@
             <a class="discord-link" href="https://discord.gg/qD8vbFmuVC" target=”_blank”>Discord</a>
         </aside>
         <aside class="form">Or fill out this form to contact us directly!<br><br>
-            <form>
+            <form id="form" action="#" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name"><br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email"><br>
                 <label for="question">Question:</label>
                 <textarea name="question" id="question" rows="5" cols="25"></textarea>
+                <button type="submit">Submit</button>
             </form>
         </aside>
     </div>
+    <script src="script.js"></script>
 
     <section class="leadership">
         <h2>Leadership</h2>
@@ -68,7 +70,7 @@
             <img src="images/naveen300.png" alt="Picture of Naveen Chithan" height="250">
             <h3>Naveen Chithan</h3>
             <p>Treasurer</p>
-            <a href="mailto:NCHITHAN@email.sc.edu" target=”_blank”>NCHITHAN@email.sc.edu</a><
+            <a href="mailto:NCHITHAN@email.sc.edu" target=”_blank”>NCHITHAN@email.sc.edu</a>
         </div>
         <div class="leader-container">
             <img src="images/nikhil300.jpg" alt="Picture of Nikhil Vaishnav"  height="250">
@@ -85,10 +87,14 @@
     </section>
 
     <footer>
-        <a href="mailto:socyber@mailbox.sc.edu" target=”_blank”>Email</a>
-        <a href="https://discord.gg/qD8vbFmuVC" target=”_blank”>Discord</a>
-        <a href="https://garnetgate.sa.sc.edu/organization/cyber" target=”_blank”>GarnetGate</a>
-        <p>University of South Carolina Cybersecurity Club 2023</p>
+        <div class="footerLinks">
+            <a href="mailto:socyber@mailbox.sc.edu" target=”_blank”>Email</a>
+            <a href="https://discord.gg/qD8vbFmuVC" target=”_blank”>Discord</a>
+            <a href="https://garnetgate.sa.sc.edu/organization/cyber" target=”_blank”>GarnetGate</a>
+        </div>
+        <div class="copyright">
+            <p>University of South Carolina Cybersecurity Club 2023</p>
+        </div>
     </footer>
 </body>
 </html>
