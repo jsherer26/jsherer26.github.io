@@ -129,6 +129,8 @@ footer a {
 .copyright {
     display: flex;
     flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 /*This creates a flexbox around the map and text allowing them to be next to each other*/
 .about {
@@ -151,6 +153,12 @@ footer a {
     background-color: var(--grey);
     text-align: center;
     height: 350px;
+}
+.discord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .discord-text {
     background-color: var(--garnet);
