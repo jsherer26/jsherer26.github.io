@@ -85,8 +85,8 @@ nav {
 }
 /*This creates the background and font for all the articles*/
 article {
-    background-color: var(--grey);
-    color: white;
+    background-color: white;
+    color: black;
     margin: 0px;
     display:flex;
     flex-direction: column;
@@ -94,7 +94,7 @@ article {
 article p{
     padding: 0px;
     font-size: 20px;
-    background-color: var(--grey);
+    background-color: white;
 }
 article h2 {
     padding-bottom: 5px;
@@ -102,6 +102,7 @@ article h2 {
     padding-left: 10px;
     font-size: 30px;
     background-color: var(--garnet);
+    color: white;
 }
 /*This styles the footer*/
 footer {
@@ -134,8 +135,8 @@ footer a {
 }
 /*This creates a flexbox around the map and text allowing them to be next to each other*/
 .about {
-    background-color: var(--grey);
-    color: white;
+    background-color: white;
+    color: black;
     margin: 0px;
     display:flex;
     flex-direction: row;
@@ -150,7 +151,7 @@ footer a {
     display: flex;
     align-items:center;
     justify-content: center;
-    background-color: var(--grey);
+    background-color: white;
     text-align: center;
     height: 350px;
 }
@@ -207,7 +208,7 @@ footer a {
     display: flex;
     align-items: center;
     overflow: hidden;
-    background-color: var(--grey);
+    background-color: white;
     margin: 0px;
     border: black solid 1px;
 }
@@ -216,7 +217,15 @@ footer a {
     height: 300px;
     padding: 20px;
 }
-.leader-container h3,p {
+.leader-container h3 {
+    color: white;
+    background-color: var(--garnet);
+    padding: 10px;
+    border-radius: 25px;
+    margin: 10px;
+    float: left;
+}
+.leader-container p {
     color: white;
     background-color: var(--garnet);
     padding: 10px;
@@ -242,21 +251,15 @@ section h2 {
     margin: 0px;
 }
 /*This fixes the resources page sections*/
-.presentations  {
-    background-color: var(--grey);
-    color: white;
+.presentations, .learning, .documents {
+    background-color: white;
+    color: black;
     padding-bottom: 20px;
 }
-.learning {
-    background-color: var(--grey);
-    color: white;
-    padding-bottom: 20px;
+.presentations a, .learning a, .documents a {
+    color: black;
 }
-.documents {
-    background-color: var(--grey);
-    color: white;
-    padding-bottom: 20px;
-}
+)
 /*This provides more spacing between items in the FAQ page*/
 .faq li {
     padding: 5px;
