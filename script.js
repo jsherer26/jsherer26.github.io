@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Initialize an array to store error messages
         const errors = [];
 
-        // Validation for username (minimum length of 1 character)
+        // Validation for name (minimum length of 1 character)
         if (nameInput.value.length < 1) {
             errors.push("Please enter a name.");
         }
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // If there are errors, prevent form submission and display them
         if (errors.length > 0) {
-            event.preventDefault(); // Prevent form submission
+            event.preventDefault();
             alert(errors.join("\n")); // Display error messages in an alert
         }
     });

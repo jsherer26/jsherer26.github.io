@@ -259,7 +259,6 @@ section h2 {
 .presentations a, .learning a, .documents a {
     color: black;
 }
-)
 /*This provides more spacing between items in the FAQ page*/
 .faq li {
     padding: 5px;
